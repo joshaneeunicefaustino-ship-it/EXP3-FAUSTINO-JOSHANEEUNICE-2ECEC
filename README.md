@@ -89,12 +89,12 @@ rather than by row numbers.
 
 **CODE:**
 
-```selected_cars = cars.loc[(cars['Model'] == 'Datsun 710', ['Model', 'mpg', 'cyl', 'hp', 'gear'])]```
+```selected_cars = cars.loc[(cars['Model'] == 'Datsun 710') |(cars['Model'] == 'Lotus Europa')|(cars['Model'] == 'Ferrari Dino'),['Model', 'mpg', 'cyl', 'hp', 'gear']]```
 
-- This code used boolean again and located the car model Datsun 710 but only retained the following columns, ['Model', 'mpg', 'cyl', 'hp', 'gear']
+- This code used boolean again and located the car model Datsun 71, Lotus Europa, and Ferrari Dino but only retained the following columns, ['Model', 'mpg', 'cyl', 'hp', 'gear']
 
-Display selected cars and its shape.
+**Display selected cars and its shape.**
 
 ```selected_cars.shape```
 
-result: (1, 5)
+result: (3, 5)
