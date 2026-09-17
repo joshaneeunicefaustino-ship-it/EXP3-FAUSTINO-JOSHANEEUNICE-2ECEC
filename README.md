@@ -22,7 +22,7 @@ for the Python programming language.
 - this is used for this programming assignment
 > # Process
 **- Pandas as pd was imported in order to access the library pandas and to also shorten pandas  
-instead of typing it multiple times import pandas as pd**
+instead of typing it multiple times ```import pandas as pd```**
 
 ```cars = pd.read_csv("cars.csv")```
 
